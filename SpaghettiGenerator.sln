@@ -22,4 +22,7 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4EE95116-C78C-436E-84CE-DE20078DC366}
 	EndGlobalSection
+	GlobalSection(NDepend) = preSolution
+		Project = ".\SpaghettiGenerator.ndproj"
+	EndGlobalSection
 EndGlobal
