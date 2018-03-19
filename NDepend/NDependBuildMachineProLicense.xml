@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<NDependProLicense>
+  <LicenseId>4W87J5ZKX</LicenseId>
+  <LicenseKind>2</LicenseKind>
+  <CompanyName>Jimmy Pelletier NDC Oslo 2018 License</CompanyName>
+  <CompanyAddress1>407/1 Roy St</CompanyAddress1>
+  <CompanyAddress2 />
+  <City>Melbourne</City>
+  <StateProvince />
+  <ZipPostalCode>3004</ZipPostalCode>
+  <Country>Australia</Country>
+  <ContactFirstName>Jimmy</ContactFirstName>
+  <ContactLastName>Pelletier</ContactLastName>
+  <ContactEmail>mail@thejimmyp.com</ContactEmail>
+  <ContactAlternativeEmail />
+  <ContactPhone />
+  <NbSeats>1</NbSeats>
+  <NbExtraSeats>0</NbExtraSeats>
+  <EmitLicenseFile>true</EmitLicenseFile>
+  <IsTrialLicense>false</IsTrialLicense>
+  <ExpireDate>13 Mar 2019</ExpireDate>
+  <RenewFromDate>13 Mar 2019</RenewFromDate>
+  <PerpetualFallbackProductDate>13 Mar 2018</PerpetualFallbackProductDate>
+<Signature><Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+         <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+         <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+         <Reference URI="">
+           <Transforms>
+             <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+           </Transforms>
+           <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+           <DigestValue>MgfktAtBwvLzFAc+VYFE/6sQH3Q=</DigestValue>
+         </Reference>
+       </SignedInfo>
+       <SignatureValue>gPqi6j03ODeqIRz1IDBoYp88iypor1twzcqOUK8bHwq7xj80R7QdpALdTdcQPXBKLJS27CIWJb+d5H/f+Wn6WB4Ltej2ZUiFFKqJ4DeZMpcAArUeZroaEsrplnt/7SochUfhatnx30nU0UC0SlZSTpvTb4+EaxN1n0+IHbiIbLo=2</SignatureValue>
+      </Signature>
+</Signature></NDependProLicense>
