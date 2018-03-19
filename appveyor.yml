@@ -2,5 +2,4 @@ build:
     project: SpaghettiGenerator.sln
 
 after_build:
-    - ps: $ndproj = Resolve-Path .\SpaghettiGenerator.ndproj
-    - ps: .\NDepend\NDepend.Console.exe $ndproj
+    - ps: Analyze.ps1
