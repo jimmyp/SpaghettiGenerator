@@ -2,4 +2,5 @@ build:
     project: SpaghettiGenerator.sln
 
 after_build:
-    - ps: Write-Host "This is PowerShell"
+    - ps: $ndproj = Resolve-Path .\SpaghettiGenerator.ndproj
+    - ps: .\NDepend\NDepend.Console.exe $ndproj
