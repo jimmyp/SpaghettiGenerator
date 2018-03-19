@@ -1,2 +1,5 @@
 build:
-  project: SpaghettiGenerator.sln  
+    project: SpaghettiGenerator.sln
+
+after_build:
+    - ps: Write-Host "This is PowerShell"
