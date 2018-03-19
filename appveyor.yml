@@ -2,4 +2,4 @@ build:
     project: SpaghettiGenerator.sln
 
 after_build:
-    - ps: Analyze.ps1
+    - ps: .\Analyze.ps1
