@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <NDepend AppName="SpaghettiGenerator" Platform="DotNet" FileWrittenByProductVersion="2018.1.0.9030">
   <OutputDir KeepXmlFiles="False">$(NdProjectDir)\NDependOut</OutputDir>
   <Assemblies>
@@ -82,7 +82,8 @@
       <High2Critical_SeverityThreshold>72000000000</High2Critical_SeverityThreshold>
       <Critical2Blocker_SeverityThreshold>360000000000</Critical2Blocker_SeverityThreshold>
     </DebtSettings>
-  </ProjectDebtSettings><Queries>
+  </ProjectDebtSettings>
+  <Queries>
     <Group Name="Quality Gates" Active="True" ShownInReport="True">
       <Query Active="True" DisplayList="True" DisplayStat="True" DisplaySelectionView="False" IsCriticalRule="False"><![CDATA[// <Name>Quality Gates Evolution</Name>
 from qg in QualityGates
@@ -314,7 +315,7 @@ select (debt - debtInBaseline).ToManDay()
 //
 // Debt documentation: https://www.ndepend.com/docs/technical-debt#Debt
 //</Description>]]></Query>
-      <Query Active="True" DisplayList="True" DisplayStat="True" DisplaySelectionView="False" IsCriticalRule="False"><![CDATA[// <QualityGate Name="Debt Rating per Namespace" Unit="namespaces" />
+      <Query Active="False" DisplayList="True" DisplayStat="True" DisplaySelectionView="False" IsCriticalRule="False"><![CDATA[// <QualityGate Name="Debt Rating per Namespace" Unit="namespaces" />
 failif count > 0 namespaces
 
 from n in Application.Namespaces
@@ -4379,7 +4380,7 @@ select new {
 //</HowToFix>]]></Query>
     </Group>
     <Group Name="API Breaking Changes" Active="True" ShownInReport="True">
-      <Query Active="True" DisplayList="True" DisplayStat="False" DisplaySelectionView="False" IsCriticalRule="True"><![CDATA[// <Name>API Breaking Changes: Types</Name>
+      <Query Active="False" DisplayList="True" DisplayStat="False" DisplaySelectionView="False" IsCriticalRule="True"><![CDATA[// <Name>API Breaking Changes: Types</Name>
 
 warnif count > 0 from t in codeBase.OlderVersion().Application.Types
 where t.IsPubliclyVisible && 
@@ -4424,7 +4425,7 @@ select new {
 // because an API Breaking change can provoque significant
 // friction with consumers of the API.
 //</HowToFix>]]></Query>
-      <Query Active="True" DisplayList="True" DisplayStat="False" DisplaySelectionView="False" IsCriticalRule="True"><![CDATA[// <Name>API Breaking Changes: Methods</Name>
+      <Query Active="False" DisplayList="True" DisplayStat="False" DisplaySelectionView="False" IsCriticalRule="True"><![CDATA[// <Name>API Breaking Changes: Methods</Name>
 warnif count > 0 from m in codeBase.OlderVersion().Application.Methods
 where m.IsPubliclyVisible && 
 
@@ -8041,7 +8042,7 @@ select new {
 // the issue is easier to fix.
 //</HowToFix>
 ]]></Query>
-      <Query Active="True" DisplayList="True" DisplayStat="False" DisplaySelectionView="False" IsCriticalRule="False"><![CDATA[// <Name>Types with source files stored in the same directory, should be declared in the same namespace</Name>
+      <Query Active="False" DisplayList="True" DisplayStat="False" DisplaySelectionView="False" IsCriticalRule="False"><![CDATA[// <Name>Types with source files stored in the same directory, should be declared in the same namespace</Name>
 warnif count > 0 
 
 // Group JustMyCode types in a lookup 
@@ -11466,4 +11467,5 @@ select new {
 //</HowToFix>]]></Query>
       </Group>
     </Group>
-  </Queries></NDepend>
+  </Queries>
+</NDepend>
